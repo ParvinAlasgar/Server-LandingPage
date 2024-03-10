@@ -89,4 +89,16 @@ footer li {
 }
 footer li:hover {
   transform: translateX(10px);
+}
+
+@media only screen and (max-width: 576px) {
+  header h1 {
+    font-size: 25px;
+  }
+  #register h2 {
+    font-size: 37px !important;
+  }
+  #register {
+    height: 450px;
+  }
 }/*# sourceMappingURL=style.css.map */
