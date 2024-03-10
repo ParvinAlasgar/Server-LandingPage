@@ -12,16 +12,16 @@ header {
 header h1 {
   font-size: 50px;
 }
-header h1 a {
+header a {
   border: 1px solid #7cbd1e;
   background-color: #7cbd1e;
   transition: background-color 0.2s ease-in-out;
 }
-header h1 a:hover {
+header a:hover {
   background-color: #517b14;
   border: 1px solid #517b14;
 }
-header h1 a:nth-child(3):hover {
+header a:nth-child(3):hover {
   background-color: #7cbd1e !important;
   border: 1px solid #7cbd1e;
 }
