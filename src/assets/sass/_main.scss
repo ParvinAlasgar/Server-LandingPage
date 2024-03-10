@@ -1,0 +1,33 @@
+// Important import
+@import "./variables";
+
+// Extends
+%bck_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+// Header
+header {
+  @extend %bck_img;
+  background-image: url(../images/hero_bg_2.jpg);
+  padding: 350px 0;
+  h1 {
+    font-size: 50px;
+  }
+  a {
+    border: 1px solid $color_main;
+    background-color: $color_main;
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background-color: $color_main-hover;
+      border: 1px solid $color_main_hover;
+    }
+    &:nth-child(3):hover {
+      background-color: $color_main !important;
+      border: 1px solid $color_main;
+    }
+  }
+}
+// End Header

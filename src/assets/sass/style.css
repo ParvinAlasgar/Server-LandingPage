@@ -1,0 +1,27 @@
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+header {
+  background-image: url(../images/hero_bg_2.jpg);
+  padding: 350px 0;
+}
+header h1 {
+  font-size: 50px;
+}
+header a {
+  border: 1px solid #7cbd1e;
+  background-color: #7cbd1e;
+  transition: background-color 0.2s ease-in-out;
+}
+header a:hover {
+  background-color: #517b14;
+  border: 1px solid #517b14;
+}
+header a:nth-child(3):hover {
+  background-color: #7cbd1e !important;
+  border: 1px solid #7cbd1e;
+}/*# sourceMappingURL=style.css.map */
