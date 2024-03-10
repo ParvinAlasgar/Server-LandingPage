@@ -1,4 +1,4 @@
-header {
+main #register, header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -26,22 +26,49 @@ header a:nth-child(3):hover {
   border: 1px solid #7cbd1e;
 }
 
-#host .wrapper {
+main #host .wrapper {
   height: 250px;
 }
-#host .wrapper i {
+main #host .wrapper i {
   color: #7cbd1e !important;
   transition: transform 0.7s ease-in-out;
 }
-#host .wrapper a {
+main #host .wrapper a {
   border: 1px solid #7cbd1e;
   background-color: #7cbd1e;
   transition: background-color 0.2s ease-in-out;
 }
-#host .wrapper a:hover {
+main #host .wrapper a:hover {
   background-color: #517b14;
   border: 1px solid #517b14;
 }
-#host .wrapper:hover > i {
+main #host .wrapper:hover > i {
   transform: rotate(360deg);
+}
+main #register {
+  background-image: url(../images/hero_bg_3.jpg.webp);
+  padding: 350px 0;
+  z-index: 1;
+}
+main #register h2 {
+  font-size: 60px;
+}
+main #register a {
+  border: 1px solid #7cbd1e;
+  background-color: #7cbd1e;
+  transition: background-color 0.2s ease-in-out;
+}
+main #register a:hover {
+  background-color: #517b14;
+  border: 1px solid #517b14;
+}
+main #register::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(77, 117, 141);
+  opacity: 0.6;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

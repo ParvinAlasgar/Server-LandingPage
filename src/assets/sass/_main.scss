@@ -32,13 +32,40 @@ header {
 }
 // End Header
 
-// Host
-#host {
-  .wrapper {
-    height: 250px;
-    i {
-      color: $color_main !important;
-      transition: transform 0.7s ease-in-out;
+// Main
+main {
+  // Host
+  #host {
+    .wrapper {
+      height: 250px;
+      i {
+        color: $color_main !important;
+        transition: transform 0.7s ease-in-out;
+      }
+      a {
+        border: 1px solid $color_main;
+        background-color: $color_main;
+        transition: background-color 0.2s ease-in-out;
+        &:hover {
+          background-color: $color_main-hover;
+          border: 1px solid $color_main_hover;
+        }
+      }
+      &:hover > i {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  // End Host
+
+  // Client
+  #register {
+    @extend %bck_img;
+    background-image: url(../images/hero_bg_3.jpg.webp);
+    padding: 350px 0;
+    z-index: 1;
+    h2 {
+      font-size: 60px;
     }
     a {
       border: 1px solid $color_main;
@@ -49,9 +76,17 @@ header {
         border: 1px solid $color_main_hover;
       }
     }
-    &:hover > i {
-      transform: rotate(360deg);
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgb(77, 117, 141);
+      opacity: 0.6;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
     }
   }
+  // End Client
 }
-// End Host
+// End Main
