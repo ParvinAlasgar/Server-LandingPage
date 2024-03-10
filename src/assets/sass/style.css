@@ -12,16 +12,36 @@ header {
 header h1 {
   font-size: 50px;
 }
-header a {
+header h1 a {
   border: 1px solid #7cbd1e;
   background-color: #7cbd1e;
   transition: background-color 0.2s ease-in-out;
 }
-header a:hover {
+header h1 a:hover {
   background-color: #517b14;
   border: 1px solid #517b14;
 }
-header a:nth-child(3):hover {
+header h1 a:nth-child(3):hover {
   background-color: #7cbd1e !important;
   border: 1px solid #7cbd1e;
+}
+
+#host .wrapper {
+  height: 250px;
+}
+#host .wrapper i {
+  color: #7cbd1e !important;
+  transition: transform 0.7s ease-in-out;
+}
+#host .wrapper a {
+  border: 1px solid #7cbd1e;
+  background-color: #7cbd1e;
+  transition: background-color 0.2s ease-in-out;
+}
+#host .wrapper a:hover {
+  background-color: #517b14;
+  border: 1px solid #517b14;
+}
+#host .wrapper:hover > i {
+  transform: rotate(360deg);
 }/*# sourceMappingURL=style.css.map */

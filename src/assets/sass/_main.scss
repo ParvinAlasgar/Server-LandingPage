@@ -15,19 +15,43 @@ header {
   padding: 350px 0;
   h1 {
     font-size: 50px;
-  }
-  a {
-    border: 1px solid $color_main;
-    background-color: $color_main;
-    transition: background-color 0.2s ease-in-out;
-    &:hover {
-      background-color: $color_main-hover;
-      border: 1px solid $color_main_hover;
-    }
-    &:nth-child(3):hover {
-      background-color: $color_main !important;
+    a {
       border: 1px solid $color_main;
+      background-color: $color_main;
+      transition: background-color 0.2s ease-in-out;
+      &:hover {
+        background-color: $color_main-hover;
+        border: 1px solid $color_main_hover;
+      }
+      &:nth-child(3):hover {
+        background-color: $color_main !important;
+        border: 1px solid $color_main;
+      }
     }
   }
 }
 // End Header
+
+// Host
+#host {
+  .wrapper {
+    height: 250px;
+    i {
+      color: $color_main !important;
+      transition: transform 0.7s ease-in-out;
+    }
+    a {
+      border: 1px solid $color_main;
+      background-color: $color_main;
+      transition: background-color 0.2s ease-in-out;
+      &:hover {
+        background-color: $color_main-hover;
+        border: 1px solid $color_main_hover;
+      }
+    }
+    &:hover > i {
+      transform: rotate(360deg);
+    }
+  }
+}
+// End Host
