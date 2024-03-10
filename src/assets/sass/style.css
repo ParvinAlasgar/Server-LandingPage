@@ -81,4 +81,11 @@ main #choose .wrapper i {
 }
 main #choose .wrapper:hover > .content > i {
   transform: rotate(360deg);
+}
+
+footer li {
+  transition: transform 0.7s ease-in-out;
+}
+footer li:hover {
+  transform: translateX(10px);
 }/*# sourceMappingURL=style.css.map */

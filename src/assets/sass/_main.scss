@@ -97,11 +97,22 @@ main {
         transition: transform 0.7s ease-in-out;
         color: $color_main;
       }
-      &:hover >.content>i {
+      &:hover > .content > i {
         transform: rotate(360deg);
       }
     }
   }
   // End Choose
-  // End Main
 }
+// End Main
+
+// Footer
+footer {
+  li {
+    transition: transform 0.7s ease-in-out;
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+}
+// End Footer
