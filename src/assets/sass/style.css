@@ -28,6 +28,7 @@ header a:nth-child(3):hover {
 
 main #host .wrapper {
   height: 250px;
+  cursor: pointer;
 }
 main #host .wrapper i {
   color: #7cbd1e !important;

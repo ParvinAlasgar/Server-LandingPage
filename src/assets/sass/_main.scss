@@ -38,6 +38,7 @@ main {
   #host {
     .wrapper {
       height: 250px;
+      cursor: pointer;
       i {
         color: $color_main !important;
         transition: transform 0.7s ease-in-out;
