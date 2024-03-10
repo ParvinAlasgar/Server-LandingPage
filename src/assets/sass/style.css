@@ -71,4 +71,14 @@ main #register::after {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+main #choose .wrapper {
+  cursor: pointer;
+}
+main #choose .wrapper i {
+  transition: transform 0.7s ease-in-out;
+  color: #7cbd1e;
+}
+main #choose .wrapper:hover > .content > i {
+  transform: rotate(360deg);
 }/*# sourceMappingURL=style.css.map */

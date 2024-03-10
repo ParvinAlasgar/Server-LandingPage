@@ -88,5 +88,20 @@ main {
     }
   }
   // End Client
+
+  // Choose
+  #choose {
+    .wrapper {
+      cursor: pointer;
+      i {
+        transition: transform 0.7s ease-in-out;
+        color: $color_main;
+      }
+      &:hover >.content>i {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  // End Choose
+  // End Main
 }
-// End Main
